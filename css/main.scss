@@ -120,7 +120,7 @@ section {
     background: linear-gradient(180deg, #2E87F1 0%, rgba(173, 211, 255, 0.644154) 18.92%, rgba(255, 255, 255, 0) 100%), #0083E1;
     // min-height: 1200px;
     color: white;
-    text-shadow: 0px 2px #000000;
+    text-shadow: 0px 2px #666;
 
     .small-terminal {
         width: 100%;
@@ -176,6 +176,7 @@ section {
     }
 
     .info-container{
+        margin-top: 5em;
         margin-bottom: 5em;
 
         .info-onpt {
@@ -193,7 +194,7 @@ section {
         }
 
         h2 {
-            font-size: 2em;
+            font-size: 1.6em;
         }
 
         p {
@@ -212,4 +213,5 @@ section {
 footer {
     background-color: #999;
     text-align: center;
+    color: #3b3b3b;
 }
