@@ -13,6 +13,9 @@ body {
 .header {
     background: #000;
     padding: 1em;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 
     .logo {
         width: 80%;
@@ -28,15 +31,59 @@ body {
 .navbar {
     nav {
         display: none;
+        position: fixed;
+        z-index: 999;
+        width: 66%;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        background: #111;
+        padding: 1em;
+
+        ul.main-nav {
+            margin-top: 5em;
+        }
+
+        li {
+            a {
+                color: #FFF;
+                text-decoration: none;
+                display: block;
+                padding: .5em;
+                font-size: 1.5em;
+                text-align: right;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    nav.menu-btn {
+        display: block;
     }
     
     .container {
         display: flex;
         place-content: space-between;
     }
+
+    hr {
+        display: none;
+    }
 }
 
+
+
 .mobile-menu {
+    cursor: pointer;
+    margin-right: 2em;
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
     cursor: pointer;
 }
 
@@ -68,6 +115,7 @@ section {
 }
 
 .hero {
+    margin-top: 5em;
     text-align: center;
 
     .main-illustration {
@@ -100,8 +148,11 @@ section {
             display: inline-block;
             vertical-align: top;
             margin-left: .25em;
-            @media only screen and (min-width: 425px) and (max-width: 767px) { 
+            @media only screen and (min-width: 425px) and (max-width: 715px) { 
                 max-width: 10em;
+            }
+            @media only screen and (min-width: 717px) and (max-width: 767px) { 
+                display: block;
             }
         }
     }
@@ -118,7 +169,6 @@ section {
 .scope-section {
     text-align: center;
     background: linear-gradient(180deg, #2E87F1 0%, rgba(173, 211, 255, 0.644154) 18.92%, rgba(255, 255, 255, 0) 100%), #0083E1;
-    // min-height: 1200px;
     color: white;
     text-shadow: 0px 2px #666;
 
@@ -214,4 +264,195 @@ footer {
     background-color: #999;
     text-align: center;
     color: #3b3b3b;
+}
+
+@media only screen and (min-width: 768px)  {
+    
+    .header{
+        position: unset;
+        padding: .5em;
+        .container {
+            justify-content: center;
+        }
+        .logo {
+            width: unset;
+            max-height: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: block;
+    }
+
+    .navbar hr {
+        display: block;
+        max-width: 1200px;
+        width: 80%;
+        margin-top: 1em;
+        border-top: 1px solid #f2f2f2;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: center;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        ul.main-nav {
+            margin-top: unset;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 1.5em;
+            a {
+                color: #404040;
+                font-size: 1.2em;
+                padding: .1em 1em;
+
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+        
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        li.request-cta {
+            background: var(--primary-btn-color);
+            padding: .15em .2em;
+            border-radius: 1.3em;
+            margin-left: 1em;
+            a {color: white;}
+        }
+    }
+
+    section {
+        padding: 2em 4em;
+    }
+
+    .hero {
+        margin-top: unset;
+        .main-illustration {
+            .hero-img-1 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-img-2 {
+                position: relative;
+                width: 50%;
+                top: -6em;
+                margin-bottom: -6em;
+            }
+        }
+        .left-col {
+            h1 {
+                font-size: 2em;
+            }
+            .subhead {
+                display: block;
+                font-size: .8em;
+                max-width: unset;
+                margin-left: unset;
+            }
+        }
+
+        .separator {
+            margin-top: 4em;
+            margin-bottom: 8em;
+        }
+    }
+
+    .scope-section {
+        .container {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .small-terminal {
+            display: none;
+        }
+        .terminal {
+            display: unset;
+            position: relative;
+            top: -8em;
+            margin-bottom: -8em;
+            z-index: 5;
+            width: 60%;
+        }
+        .cloud-1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            left: -9em;
+            top: -10em;
+        }
+        .cloud-2 {
+            display: block;
+            width: 40%;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: -28em;
+            margin-bottom: -18em;
+            left: 10em;
+            z-index: 3;
+        }
+        .cloud-3 {
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            left: -10em;
+            top: -35em;
+            margin-bottom: -20em;
+        }
+        .cloud-4 {
+            display: block;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            top: -30em;
+            left: 10em;
+            margin-bottom: -27em;
+        }
+        .arrow {
+            width: 8%;
+        }
+        .info-container {
+            .info-onpt {
+                width: 60%;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+    }
 }
