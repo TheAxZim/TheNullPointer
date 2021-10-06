@@ -122,6 +122,7 @@ section {
 
 .hero .main-illustration .hero-img-2 {
   width: 95%;
+  max-width: 500px;
 }
 
 .hero .left-col h1 {
@@ -369,10 +370,13 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 60%;
+    max-width: 500px;
   }
   .hero .main-illustration .hero-img-2 {
     position: relative;
-    width: 50%;
+    width: 40%;
+    max-width: 400px;
     top: -6em;
     margin-bottom: -6em;
   }
@@ -456,6 +460,97 @@ footer {
   }
   .scope-section .info-container p {
     font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1154px) {
+  .hero {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    text-align: unset;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .container .main-illustration .hero-img-1 {
+    min-width: 500px;
+  }
+  .hero .container .main-illustration .hero-img-2 {
+    min-width: 400px;
+  }
+  .hero .container .left-col h1 {
+    font-size: 2.0em;
+  }
+  .hero .container .left-col h1 .subhead {
+    font-size: .8em;
+  }
+  .hero .container .left-col .primary-cta {
+    max-width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: unset;
+  }
+  .scope-section .container {
+    max-width: 1400px;
+  }
+  .scope-section .container .info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .scope-section .container .info-container .info-onpt {
+    width: 50%;
+    min-width: 500px;
+    max-width: 700px;
+  }
+  .scope-section .container .reversed {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .scope-section .terminal {
+    width: 60%;
+    max-width: 600px;
+  }
+  .scope-section .cloud-1 {
+    left: -15em;
+    top: -13em;
+    margin-bottom: -14em;
+  }
+  .scope-section .cloud-2 {
+    margin-right: -10em;
+    left: 17em;
+  }
+  .scope-section .cloud-3 {
+    margin-right: -10em;
+    left: -20em;
+  }
+  .scope-section .cloud-4 {
+    margin-left: -15em;
+    left: -10em;
+    top: -25em;
   }
 }
 /*# sourceMappingURL=main.css.map */
