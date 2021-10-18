@@ -80,7 +80,7 @@ export default function Scope() {
                         <p>
                             <span>Malicious actors won&apos;t wait, so why should you?</span>
                         </p>
-                        <a href="#" className={styles.primaryCta}>Let's have a chat</a>
+                        <a href="#" className={styles.primaryCta}>Let&apos;s have a chat</a>
                         <div className={styles.infoOnpt}><Image src={infoInbox} alt="Inbox Infographic" /></div>
                     </div>
                 </div>
