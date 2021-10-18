@@ -1,4 +1,3 @@
-# Null Pointer Static Frontend
+# Null Pointer (NextJS)
 
-[WIP]
-This public repostory holds the draft version of the Null Pointer static frontend.
+This repository holds the frontend for the Null Pointer website. 
