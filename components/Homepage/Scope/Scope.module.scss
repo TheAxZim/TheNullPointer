@@ -1,0 +1,247 @@
+
+.primaryCta {
+    background: var(--primary-btn-color);
+    color: white;
+    text-decoration: none;
+    width: 80%;
+    padding: .6em 1em;
+    margin-top: 1.5em;
+    font-size: 1.3em;
+    border-radius: 5em;
+    display: inline-block;
+    text-shadow: none;
+}
+
+.scopeSection {
+    display: block;
+    text-align: center;
+    background: linear-gradient(180deg, #2E87F1 0%, rgba(173, 211, 255, 0.644154) 18.92%, rgba(255, 255, 255, 0) 100%), #0083E1;
+    color: white;
+    text-shadow: 0px 2px #666;
+
+    .smallTerminal {
+        width: 100%;
+        position: relative;
+        top: -8em;
+        margin-bottom: -8em;
+        z-index: 5;
+    }
+
+    .terminal {
+        display: none;
+    }
+
+    .cloud1 {
+        width:40%;
+        position: relative;
+        top: -7em;
+        margin-bottom: -7em;
+        left: -1.5em;
+        z-index: 6;
+    }
+    
+    .cloud2 {
+        display: none;
+    }
+
+    .cloud3 {
+        width:55%;
+        position: relative;
+        top: -24em;
+        right: -5em;
+        margin-bottom: -11em;
+        z-index: 3;
+    }
+
+    .cloud4 {
+        width:70%;
+        position: relative;
+        top: -18em;
+        left: -3em;
+        margin-bottom: -11em;
+        z-index: 3;
+    }
+
+    .arrow {
+        display: block;
+        position: relative;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        z-index: 7;
+    }
+
+    .infoContainer{
+        margin-top: 5em;
+        margin-bottom: 5em;
+
+        .secureApiText {
+            display: block;
+        }
+
+        .infoOnpt {
+            display: block;
+            position: relative;
+            margin-top: 3em;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            z-index: 6;
+        }
+
+        h1 {
+            font-size:3em;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        p {
+            line-height: 140%;
+            font-size: 18px;
+            span {
+                color: #3b3b3b;
+                font-size: 1.3em;
+                font-weight: bold;
+                text-shadow: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .scopeSection {
+        .container {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .maxW60 {
+            display: block;
+            width: 60%;
+        }
+        .smallTerminal {
+            display: none;
+        }
+        .terminal {
+            display: unset;
+            position: relative;
+            top: -8em;
+            margin-bottom: -8em;
+            z-index: 5;
+            left: calc(33%);
+            // transform: translateX(-50%);
+        }
+        .cloud1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: -20em;
+            width: 35%;
+            left: -9em;
+            top: -20em;
+        }
+        .cloud2 {
+            display: block;
+            width: 40%;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: -28em;
+            margin-bottom: -18em;
+            left: 10em;
+            z-index: 3;
+        }
+        .cloud3 {
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            left: -10em;
+            top: -35em;
+            margin-bottom: -20em;
+        }
+        .cloud4 {
+            display: block;
+            width: 50%;
+            max-width: 355px;
+            margin-left: auto;
+            margin-right: auto;
+            top: -30em;
+            left: 10em;
+            margin-bottom: -20em;
+        }
+        .arrow {
+            width: 8%;
+        }
+        .infoContainer {
+            .infoOnpt {
+                width: 60%;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1154px) {
+    .scopeSection {
+        .container {
+            max-width: 1400px;
+
+            .infoContainer {
+                display: flex;
+                justify-content: center;
+
+                .infoOnpt {
+                    width: 50%;
+                    min-width: 500px;
+                    max-width: 700px;
+                }
+            }
+
+            .reversed {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .terminal {
+            width: 60%;
+            max-width: 600px;
+        }
+
+        .cloud1 {
+            left: -15em;
+            top: -25em;
+            margin-bottom: -14em;
+        }
+
+        .cloud2 {
+            margin-right: -10em;
+            margin-bottom: -10em;
+            left: 25em;
+            top: -20em;
+        }
+
+        .cloud3 {
+            margin-right: -10em;
+            top: -15em;
+            left: -30%;
+        }
+
+        .cloud4 {
+            margin-left: -15em;
+            left: -10em;
+            top: -5em;
+        }
+    }
+}
