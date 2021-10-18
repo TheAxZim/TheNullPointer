@@ -29,16 +29,17 @@ export default function Scope() {
                     </div>
                 </div>
                 <div className={styles.cloud1}>
-                    <Image src={cloud} layout="responsive" alt="Decorative cloud" />
+                    <Image src={cloud} layout="responsive" alt="" />
                 </div>
-                <div className={styles.arrow}><Image src={arrow} alt="Pointer to next section" /></div>
+                <div className={styles.arrow}><Image src={arrow} alt="" /></div>
                 <div className={styles.infoContainer}>
                     <div className={styles.infoOnpt}>
                         <Image 
                             src={infoOnlineProtection} 
-                            layout="responsive" />
+                            layout="responsive"
+                            alt="Infographic denoting online protection" />
                     </div>
-                    <div className={styles.cloud2}><Image src={cloud} layout="responsive" alt="Decorative cloud" /></div>
+                    <div className={styles.cloud2}><Image src={cloud} layout="responsive" alt="" /></div>
                     <div className={styles.secureApisText}>
                         <h1>Secure your APIs</h1>
                         <p>
@@ -47,10 +48,10 @@ export default function Scope() {
                         </p>
                     </div>
                 </div>
-                <div className={styles.arrow}><Image src={arrow} alt="Pointer to next section" /></div>
+                <div className={styles.arrow}><Image src={arrow} alt="" /></div>
                 <div className={`${styles.infoContainer} ${styles.reversed}`}>
-                    <div className={styles.infoOnpt}><Image src={iPhone}/></div>
-                    <div className={styles.cloud3}><Image src={cloud} layout="responsive" alt="Decorative cloud" /></div>
+                    <div className={styles.infoOnpt}><Image src={iPhone} alt="Infographic denoting mobile security"/></div>
+                    <div className={styles.cloud3}><Image src={cloud} layout="responsive" alt="" /></div>
                     <div className={styles.secureApiText}>
                         <h1>Mobile Apps</h1>
                         <p>
@@ -60,10 +61,10 @@ export default function Scope() {
                         </p>
                     </div>
                 </div>
-                <div className={styles.arrow}><Image src={arrow} alt="Pointer to next section" /></div>
+                <div className={styles.arrow}><Image src={arrow} alt="" /></div>
                 <div className={styles.infoContainer}>
-                    <div className={styles.infoOnpt}><Image src={infoLaptop} /></div>
-                    <div className={styles.cloud4}><Image src={cloud} layout="responsive" alt="Decorative cloud" /></div>
+                    <div className={styles.infoOnpt}><Image src={infoLaptop} alt="Infographic denoting web security" /></div>
+                    <div className={styles.cloud4}><Image src={cloud} layout="responsive" alt="" /></div>
                     <div className={styles.secureApiText}>
                         <h1>Web Frontends</h1>
                         <p>
@@ -72,15 +73,15 @@ export default function Scope() {
                         </p>
                     </div>
                 </div>
-                <div className={styles.arrow}><Image src={arrow} alt="Pointer to next section" /></div>
+                <div className={styles.arrow}><Image src={arrow} alt="" /></div>
                 <div className={styles.infoContainer}>
                     <div className={styles.secureApiText}>
-                        <h2>At the end, we’ll send you a report with all of our detailed findings and walk you through remediation.</h2>
+                        <h2>At the end, we&apos;ll send you a report with all of our detailed findings and walk you through remediation.</h2>
                         <p>
-                            <span>Malicious actors won’t wait, so why should you?</span>
+                            <span>Malicious actors won&apos;t wait, so why should you?</span>
                         </p>
                         <a href="#" className={styles.primaryCta}>Let's have a chat</a>
-                        <div className={styles.infoOnpt}><Image src={infoInbox} /></div>
+                        <div className={styles.infoOnpt}><Image src={infoInbox} alt="Inbox Infographic" /></div>
                     </div>
                 </div>
             </div>

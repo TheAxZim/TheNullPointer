@@ -8,9 +8,9 @@ import infoReport from '/public/info_report.svg';
 
 export default function Hero() {
     return (
-        <section class={styles.hero}>
-            <div class={styles.container}>
-                <div class={styles.mainIllustration}>
+        <section className={styles.hero}>
+            <div className={styles.container}>
+                <div className={styles.mainIllustration}>
                     <div className={styles.heroImg1}>
                         <Image 
                             src={infoConsulting}
@@ -26,13 +26,13 @@ export default function Hero() {
                             objectFit="contain" />
                     </div>
                 </div>
-                <div class={styles.leftCol}>
-                    <h1>Threat Modelling. <br />Penetration Testing. <br /> Let us do the work for you. <span class={styles.subhead}>Professional testing with detailed reports.</span></h1>
+                <div className={styles.leftCol}>
+                    <h1>Threat Modelling. <br />Penetration Testing. <br /> Let us do the work for you. <span className={styles.subhead}>Professional testing with detailed reports.</span></h1>
         
-                    <a href="#" class={styles.primaryCta}>Our Services</a>
+                    <a href="#" className={styles.primaryCta}>Our Services</a>
                 </div>
             </div>
-            <hr class={styles.separator} />
+            <hr className={styles.separator} />
         </section>
     );
 }
