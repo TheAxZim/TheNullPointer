@@ -8,7 +8,7 @@ export default function Custom404(){
     <MainLayout>
       <PageMeta 
           title="404 - Page Not Found"
-          description="You've reached a page that may have been deleted or perhaps it never existed in the first place."
+          description="You&apos;ve reached a page that may have been deleted or perhaps it never existed in the first place."
           url={Config.pageMeta.notFound.url}
       />
       <h1>404</h1>
