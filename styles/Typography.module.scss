@@ -1,10 +1,10 @@
 .heading__h1 {
     font-size: clamp(2.2rem, 3vw, 3rem);
-    line-height: 1.5;
+    line-height: 1.3;
     margin-bottom: 3rem;
     font-weight: var(--font-weight-normal);
     font-family: var(--font-family-main);
-    color: var(--color-foreground);
+    color: #283848;
   }
   
   .heading__h2 {
@@ -13,18 +13,18 @@
     margin-bottom: 2rem;
     font-weight: var(--font-weight-normal);
     font-family: var(--font-family-main);
-    color: var(--color-foreground);
+    color: #283848;
     word-break: break-word;
     hyphens: auto;
   }
   
   .heading__h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.4;
     margin-bottom: 2rem;
     font-weight: var(--font-weight-normal);
     font-family: var(--font-family-main);
-    color: var(--color-foreground);
+    color: #283848;
   }
   
   .heading__h4 {
@@ -33,7 +33,7 @@
     margin-bottom: 2rem;
     font-weight: var(--font-weight-normal);
     font-family: var(--font-family-main);
-    color: var(--color-foreground);
+    color: #283848;
   }
   
   .heading__h5 {
@@ -42,7 +42,7 @@
     margin-bottom: 2rem;
     font-weight: var(--font-weight-normal);
     font-family: var(--font-family-main);
-    color: var(--color-foreground);
+    color: #283848;
   }
   
   .heading__h6 {
@@ -52,21 +52,34 @@
     font-weight: var(--font-weight-normal);
     font-family: var(--font-family-main);
     font-weight: var(--font-weight-bold);
-    color: var(--color-foreground);
+    color: #283848;
   }
   
   .bodyCopy {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 2rem;
     font-weight: var(--font-weight-light);
     font-family: var(--font-family-main);
-    color: var(--color-foreground);
+    color: #283848;
     word-break: break-word;
+
+    @media only screen and (min-width: 560px) and (max-width: 767px) { 
+      font-size: 1.0rem;
+      line-height: 1.4;
+    }
+    @media only screen and (min-width: 400px) and (max-width: 560px) { 
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    @media only screen and (min-width: 250px) and (max-width: 400px) { 
+      font-size: 0.5rem;
+      line-height: 1.4;
+    }
   }
   
   .bodyCopy__bold {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(700);
   }
   
   .blockquote {
@@ -97,18 +110,18 @@
   
   .inlineLink {
     color: inherit;
-    transition: color var(--global-transition-time) ease-in-out;
+    transition: color .5s ease-in-out;
     text-decoration: underline;
     text-underline-offset: 0.125rem;
     text-decoration-thickness: 0.125rem;
   }
   
   .inlineLink:visited {
-    color: var(--color-foreground);
+    color: #283848;
   }
   
   .inlineLink:hover {
-    color: var(--color-foreground);
+    color: #283848;
   }
   
   .inlineLink:focus {
@@ -127,9 +140,9 @@
   }
   
   .inlineCode {
-    color: var(--color-background);
-    background-color: var(--color-foreground);
+    color: #fbc500;
+    background-color: #283848;
+    padding: 0.15rem 0.6rem;
     text-shadow: 0 1px rgb(0 0 0 / 30%);
-    font-family: var(--font-family-code);
-    font-size: 1rem;
+    font-size: 0.95rem;
   }

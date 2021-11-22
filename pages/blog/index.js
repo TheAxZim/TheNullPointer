@@ -1,6 +1,8 @@
-import Head from 'next/head'
-import Link from 'next/link'
 import MainLayout from '@layouts/MainLayout'
+import PageMeta from '@components/PageMeta';
+import { Config } from '@utils/Config';
+import ContentfulApi from '@utils/ContentfulApi';
+import PostList from '@components/PostList';
 
 export default function Blog(props) {
     const {
@@ -23,10 +25,36 @@ export default function Blog(props) {
                 description={pageDescription}
                 url={Config.pageMeta.blogIndex.url}
             />
-            
-            <h1>My Blog</h1>
-            <h2>This is the Blog page.</h2>
-            <p><Link href="/">Click here to go home</Link></p>
+
+            <PostList 
+              posts={postSummaries}
+              totalPages={totalPages}
+              currentPage={currentPage}
+            />
         </MainLayout>
     );
+}
+
+export async function getStaticProps({ preview = false }) {
+  const postSummaries = await ContentfulApi.getPaginatedPostSummaries(1);
+  const pageContent = await ContentfulApi.getPageContentBySlug(
+    Config.pageMeta.blogIndex.slug,
+    {
+      preview: preview,
+    },
+  );
+
+  const totalPages = Math.ceil(
+    postSummaries.total / Config.pagination.pageSize,
+  );
+
+  return {
+    props: {
+      preview,
+      postSummaries: postSummaries.items,
+      totalPages,
+      currentPage: "1",
+      pageContent: pageContent || null,
+    },
+  };
 }

@@ -15,6 +15,14 @@ export const Config = {
       url: SITE_URL,
       slug: "/",
     },
+    contact: {
+      url: `${SITE_URL}/contact`,
+      slug: "/contact",
+    },
+    notFound: {
+      url: `${SITE_URL}/404`,
+      slug: "/404",
+    },
     blogIndex: {
       url: `${SITE_URL}/blog`,
       slug: "/blog",

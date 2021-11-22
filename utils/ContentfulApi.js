@@ -2,9 +2,11 @@
  * Taken from whitep4nth3r's NextJS Contentful starter kit
  */
 
+import { Config } from "./Config";
+
 const paginationOptions = {
-    pageSize: 2,
-    recentPostsSize: 3,
+    pageSize: Config.pagination.pageSize,
+    recentPostsSize: Config.pagination.recentPostsSize,
 }
 
 const defaultOptions = {

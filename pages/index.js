@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import MainLayout from '@layouts/MainLayout'
 import Hero from '@components/Homepage/Hero';
 import Scope from '@components/Homepage/Scope';
