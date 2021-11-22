@@ -106,9 +106,9 @@ export default class ContentfulApi {
     
         const response = await this.callContentful(query, variables);
     
-        const { total } = response.data.blogPostCollection;
-        const slugs = response.data.blogPostCollection.items
-          ? response.data.blogPostCollection.items.map((item) => item.slug)
+        const { total } = response.data?.blogPostCollection;
+        const slugs = response.data?.blogPostCollection?.items
+          ? response.data?.blogPostCollection?.items.map((item) => item.slug)
           : [];
     
         return { slugs, total };
