@@ -11,7 +11,7 @@ export default function PostItem(props) {
   
   return (
     <li key={id} className={styles.post}>
-      <Link href={`${Config.pageMeta.blogIndex.slug}/${slug}`}>
+      <Link href={`${Config.pageMeta.blogIndex.slug}/${slug}`} passHref>
         <div>
           <div className={styles.postDecorator}>
             <div className={`${styles.circle} ${styles.c1}`}></div>
