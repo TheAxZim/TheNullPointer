@@ -11,8 +11,9 @@ export default function PostList(props) {
     <>
       <ol className={styles.postList}>
         {
-          posts.map((post) =>
+          posts.map((post, indx) =>
               <PostItem 
+                key={post.sys.id}
                 id={post.sys.id}
                 slug={post.slug}
                 title={post.title}
