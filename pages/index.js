@@ -1,18 +1,20 @@
-import Head from 'next/head'
-import Layout from '../components/Layout/Layout'
-import Spacer from '../components/Spacer/Spacer'
-import Hero from '../components/Homepage/Hero/Hero';
-import Scope from '../components/Homepage/Scope/Scope';
+import MainLayout from '@layouts/MainLayout'
+import Hero from '@components/Homepage/Hero';
+import Scope from '@components/Homepage/Scope';
+import PageMeta from '@components/PageMeta';
+import { Config } from '@utils/Config';
 
 export default function Home() {
     return (
-        <Layout>
-            <Head>
-                <title>The Null Pointer - Home</title>
-            </Head>
-            <Spacer />
+        <MainLayout>
+            <PageMeta 
+                title='Home'
+                description='Null Pointer provides security services such as penetration testing, code auditing and overall organization security posture analysis.'
+                url={Config.pageMeta.home.url}
+            />
+
             <Hero />
             <Scope />
-        </Layout>
+        </MainLayout>
     );
 }

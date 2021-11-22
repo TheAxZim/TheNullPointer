@@ -1,0 +1,76 @@
+.pagination {
+  margin: 2rem auto 5rem auto;
+  max-width: 700px;
+
+  @media only screen and (min-width: 300px) and (max-width: 767px) { 
+    width: 80%;
+  }
+}
+
+.pagination__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.pagination__listItem {
+  font-size: 1.0rem;
+  text-decoration: none;
+  @media only screen and (min-width: 500px) and (max-width: 767px) { 
+    font-size: 0.9rem;
+  }
+  @media only screen and (max-width: 500px) { 
+    font-size: 0.7rem;
+  }
+}
+
+.pagination__listItem a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagination__listItem a:hover {
+  color: var(--color-tertiary);
+  transition: color .2s ease-in-out;
+}
+
+.pagination__listItem a:focus {
+  outline-width: 0;
+  box-shadow: var(--color-primary) 0 0 0 0.25rem;
+  transition: box-shadow .2s ease 0s;
+}
+
+.pagination__listItem a:focus:active {
+  outline-width: 0;
+  box-shadow: unset;
+}
+
+.pagination__listItem__disabled {
+  color: var(--color-muted);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagination__chevronContainer__left {
+  margin-right: 0.5rem;
+  display: flex;
+}
+
+.pagination__chevronContainer__right {
+  margin-left: 0.5rem;
+  display: flex;
+}
+
+.pagination__listItem__pageDescriptor {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.125rem;
+}

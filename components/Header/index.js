@@ -21,7 +21,7 @@ export default function Header() {
         <>
             <div className={styles.header}>
                 <div className={styles.container}>
-                    <a href="#">
+                    <Link href="/" passHref>
                         <div className={styles.logo}>
                         <Image 
                             src={logo}
@@ -29,7 +29,7 @@ export default function Header() {
                             width="337px"
                             height="45px"/>
                         </div>
-                    </a>
+                    </Link>
                     <div className={styles.mobileMenu}>
                         <Image 
                             onClick={openNavigation}
