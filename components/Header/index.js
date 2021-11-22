@@ -21,7 +21,7 @@ export default function Header() {
         <>
             <div className={styles.header}>
                 <div className={styles.container}>
-                    <Link href="/">
+                    <Link href="/" passHref>
                         <div className={styles.logo}>
                         <Image 
                             src={logo}
