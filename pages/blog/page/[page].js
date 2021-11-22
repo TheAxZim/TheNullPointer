@@ -43,10 +43,6 @@ export async function getStaticPaths() {
 
   const paths = [];
 
-  /**
-   * Start from page 2, so we don't replicate /blog
-   * which is page 1
-   */
   for (let page = 2; page <= totalPages; page++) {
     paths.push({ params: { page: page.toString() } });
   }

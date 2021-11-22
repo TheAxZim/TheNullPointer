@@ -406,7 +406,8 @@ export default class ContentfulApi {
         `;
     
         const response = await this.callContentful(query);
-        const totalPosts = response.data.blogPostCollection.total
+
+        const totalPosts = response.data.blogPostCollection?.total
           ? response.data.blogPostCollection.total
           : 0;
     
